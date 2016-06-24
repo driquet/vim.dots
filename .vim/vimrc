@@ -1,0 +1,26 @@
+" vimrc (Main file)
+" author : Damien Riquet
+" mail   : d.riquet@gmail.com
+" github : driquet
+
+let g:vim_home = '~/.vim/'
+set nocompatible
+
+" List of files that will be loaded
+let config_list = [
+    \ 'base.vim',
+    \ 'plugins.vim',
+    \ 'plugin_settings/*.vim',
+    \ 'mappings.vim',
+    \ 'settings.vim',
+    \ 'theme.vim'
+\]
+
+" Load the files
+for files in config_list
+    for f in split(glob(g:vim_home.files), '\n')
+        exec 'source '.f
+    endfor
+endfor
+
+source ~/.vim/mapping_bepo.vim
