@@ -6,7 +6,7 @@
 
 " Colorscheme
 set background=dark
-colorscheme wombat256
+colorscheme molokai
 set tabpagemax=15
 
 " UI

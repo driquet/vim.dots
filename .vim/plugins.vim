@@ -31,6 +31,7 @@ Plugin 'gmarik/vundle'
 " GENERAL
 if count(g:bundle_groups, 'general')
     Plugin 'bling/vim-airline'
+    Plugin 'vim-airline/vim-airline-themes'
 endif
 
 
@@ -38,7 +39,7 @@ endif
 if count(g:bundle_groups, 'tool')
     Plugin 'yegappan/mru'
     Plugin 'ervandew/supertab'
-	Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+    Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
     Plugin 'junegunn/fzf.vim'
     Plugin 'Lokaltog/vim-easymotion'
     Plugin 'vim-scripts/Gundo'
@@ -50,6 +51,7 @@ if count(g:bundle_groups, 'tool')
     Plugin 'Raimondi/delimitMate'
     Plugin 'Yggdroot/indentLine'
     Plugin 'tpope/vim-commentary'
+    Plugin 'vim-scripts/Mark--Karkat'
 endif
 
 

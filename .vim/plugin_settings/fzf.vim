@@ -5,7 +5,7 @@ let g:fzf_action = {
 	\ 'ctrl-v': 'vsplit' }
 
 " Default fzf layout
-let g:fzf_layout = { 'down': '40%' }
+let g:fzf_layout = { 'down': '~40%' }
 
 " Advanced customization using autoload functions
 autocmd VimEnter * command! Colors call fzf#vim#colors({'left':'15%'})
@@ -72,7 +72,7 @@ endfunction
 function! s:btags()
 	try
 		call fzf#run({'source':  s:btags_source(),
-					\'down':    '50%',
+					\'down':    '~50%',
 					\'options': '+m -d "\t" --with-nth 4,1',
 					\'sink':    function('s:btags_sink')})
 	catch

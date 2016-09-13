@@ -20,3 +20,6 @@ noremap <silent><Leader>a :Ag <C-R>=expand("<cword>")<CR><CR>"}
 
 noremap <Leader>oc :e %<.c<CR>
 noremap <Leader>oh :e %<.h<CR>
+
+" Highlight the current line
+nnoremap <silent> <Leader>l ml:execute 'match Search /\%'.line('.').'l/'<CR>
